@@ -1,0 +1,188 @@
+/* Design Tokens */
+:root {
+   --color-primary: #860000;
+   --color-background: #f8fafc;
+   --color-text: #1e293b;
+   --color-white: #fefbfb;
+   --space-small: 8px;
+   --space-medium: 16px;
+   --space-large: 24px;
+   --font-small: 14px;
+   --font-medium: 16px;
+   --font-large: 32px;
+}
+/* Basic Page Style */
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   font-size: var(--font-medium);
+   line-height: 1.6;
+   color: var(--color-text);
+   background-color: var(--color-background);
+}
+header,
+footer {
+   padding: var(--space-large);
+   background-color: var(--color-primary);
+   color: var(--color-white);
+   text-align: center;
+}
+h1 {
+   font-size: var(--font-large);
+}
+h2 {
+   text-align: center;
+}
+/* Navigation */
+nav {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: var(--space-medium);
+   padding: var(--space-medium);
+   background-color: var(--color-white);
+}
+nav a {
+   color: var(--color-primary);
+   text-decoration: none;
+   font-weight: bold;
+}
+nav a:hover,
+nav a:focus {
+   color: var(--color-text);
+   text-decoration: underline;
+}
+/* Main Layout */
+main {
+   display: grid;
+   grid-template-columns: minmax(0, 1fr);
+   gap: var(--space-medium);
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+}
+/* Centered Sections */
+#about,
+#services,
+#contact {
+   width: auto;
+   min-width: 0;
+   margin: var(--space-medium);
+   padding: var(--space-large);
+   background-color: var(--color-white);
+   border-radius: 8px;
+   text-align: center;
+}
+/* About Me Image */
+#about img {
+   display: block;
+   width: 180px;
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+   border-radius: 10px;
+}
+/* Modeling Services Table */
+#services {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow-x: auto;
+}
+#services table {
+   width: 100%;
+   max-width: 600px;
+   border-collapse: collapse;
+   background-color: var(--color-white);
+}
+#services caption {
+   padding: var(--space-small);
+   font-weight: bold;
+   text-align: center;
+}
+th,
+td {
+   padding: var(--space-medium);
+   border: 1px solid #cbd5e1;
+   text-align: left;
+   overflow-wrap: anywhere;
+}
+th {
+   background-color: var(--color-primary);
+   color: var(--color-white);
+}
+/* Contact Form */
+form {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-small);
+   width: 100%;
+   max-width: 500px;
+   margin: 0 auto;
+   text-align: left;
+}
+input,
+select,
+textarea {
+   width: 100%;
+   max-width: 100%;
+   padding: var(--space-small);
+   border: 1px solid #94a3b8;
+   border-radius: 4px;
+   font-size: var(--font-medium);
+}
+input:focus,
+select:focus,
+textarea:focus {
+   outline: 2px solid var(--color-primary);
+   outline-offset: 2px;
+}
+textarea {
+   resize: vertical;
+}
+/* Button */
+button {
+   padding: var(--space-small) var(--space-large);
+   margin-top: var(--space-small);
+   background-color: var(--color-primary);
+   color: var(--color-white);
+   border: none;
+   border-radius: 4px;
+   font-size: var(--font-medium);
+   cursor: pointer;
+}
+button:hover {
+   background-color: #5c0000;
+}
+button:focus {
+   outline: 2px solid var(--color-text);
+   outline-offset: 3px;
+}
+/* Tablet and Desktop */
+@media (min-width: 600px) {
+   main {
+       grid-template-columns: minmax(0, 1fr);
+   }
+   #about img {
+       width: 220px;
+   }
+}
+/* Small Mobile */
+@media (max-width: 400px) {
+   #about,
+   #services,
+   #contact {
+       margin: 8px;
+       padding: 16px;
+   }
+   h1 {
+       font-size: 26px;
+   }
+   th,
+   td {
+       padding: 8px;
+   }
+}

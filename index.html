@@ -3,69 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Midterm Practical</title>
+<title>Hire Me as Your Model</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<h1>Welcome to My Website</h1>
-<p>Explore the information on this page.</p>
+<header id="home">
+<h1>Aexie Espiritu</h1>
+<p>Aspiring Model | Fashion | Editorial</p>
 </header>
 <nav>
 <a href="#home">Home</a>
-<a href="#information">Information</a>
+<a href="#about">About Me</a>
+<a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
 <main>
-<section id="home">
-<h2>Home</h2>
-<p>This is the main introduction to the website.</p>
-<img src="assets/image.jpg"
-                alt="An image illustrating the website topic">
+<section id="about">
+<h2>About Me</h2>
+<img src="assets/model1.jfif"
+    alt="My modeling portfolio photo">
+
+<p>
+               Hello! I'm Aexie, an aspiring model interested
+               in fashion, creative photoshoots, and editorial modeling.
+               I am open to x deals to express creativity
+               and work with different brands and photographers.
+</p>
 </section>
-<section id="information">
-<h2>Information</h2>
-<p>The table below presents sample information.</p>
+<section id="services">
+<h2>Modeling Services</h2>
 <table>
-<caption>Information Table</caption>
+<caption>Available Modeling Services</caption>
 <thead>
 <tr>
-<th scope="col">Item</th>
-<th scope="col">Details</th>
-<th scope="col">Status</th>
+<th scope="col">Service</th>
+<th scope="col">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Item 1</td>
-<td>First example</td>
-<td>Available</td>
+<td>Fashion Modeling</td>
+<td>Clothing and fashion photoshoots</td>
 </tr>
 <tr>
-<td>Item 2</td>
-<td>Second example</td>
-<td>Available</td>
+<td>Editorial Modeling</td>
+<td>Creative concept photoshoots</td>
+</tr>
+<tr>
+<td>Brand Modeling</td>
+<td>Photos for brand campaigns</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="contact">
-<h2>Contact Us</h2>
+<h2>Hire Me</h2>
+<p>Have a project in mind? Send me an inquiry.</p>
 <form action="#" method="post">
-<label for="name">Full Name:</label>
-<input type="text" id="name" name="name" required>
-<label for="email">Email Address:</label>
-<input type="email" id="email" name="email" required>
-<label for="subject">Subject:</label>
-<input type="text" id="subject" name="subject" required>
-<label for="message">Message:</label>
-<textarea id="message" name="message" required></textarea>
-<button type="submit">Submit</button>
+<label for="client-name">Your Name:</label>
+<input type="text" id="client-name"
+                      name="client-name" required>
+<label for="client-email">Your Email:</label>
+<input type="email" id="client-email"
+                      name="client-email" required>
+<label for="service">Type of Modeling:</label>
+<select id="service" name="service" required>
+<option value="">Choose a service</option>
+<option value="fashion">Fashion Modeling</option>
+<option value="editorial">Editorial Modeling</option>
+<option value="brand">Brand Modeling</option>
+</select>
+<label for="message">Project Details:</label>
+<textarea id="message" name="message"
+                         rows="4" required></textarea>
+<button type="submit">Send Inquiry</button>
 </form>
-
 </section>
 </main>
 <footer>
-<p>Thank you for visiting our website.</p>
+<p>&copy; 2026 Aexie Espiritu | Model Portfolio</p>
 </footer>
 </body>
 </html>
